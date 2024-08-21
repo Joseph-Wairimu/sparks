@@ -263,7 +263,9 @@ h6 {
   .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
-
+.sparks{
+  color: var(--nav-dropdown-hover-color);
+}
   .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
@@ -844,7 +846,13 @@ section,
   border-bottom: 5px solid var(--surface-color);
   height: 100%;
 }
+.service-content {
+  display: none;
+}
 
+.service-content.active {
+  display: block;
+}
 .services .service-item .icon {
   color: var(--contrast-color);
   background: var(--accent-color);
