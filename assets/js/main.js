@@ -1,11 +1,3 @@
-/**
-* Template Name: eStartup
-* Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -115,6 +107,44 @@
   document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
     faqItem.addEventListener('click', () => {
       faqItem.parentNode.classList.toggle('faq-active');
+    });
+  });
+
+  /**
+   * Active link toggle for navigation menu
+   */
+  const navLinks = document.querySelectorAll('.navmenu a');
+
+  // Add click event listener to each link
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      // Remove 'active' class from all links
+      navLinks.forEach(link => link.classList.remove('active'));
+      
+      // Add 'active' class to the clicked link
+      this.classList.add('active');
+    });
+  });
+
+  /**
+   * Service tabs functionality
+   */
+  document.querySelectorAll('.service-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // Remove 'active' class from all service links
+      document.querySelectorAll('.service-link').forEach(link => link.classList.remove('active'));
+
+      // Add 'active' class to the clicked link
+      this.classList.add('active');
+
+      // Hide all service content
+      document.querySelectorAll('.service-content').forEach(content => content.classList.remove('active'));
+
+      // Show the corresponding service content
+      const target = this.getAttribute('data-target');
+      document.querySelector(target).classList.add('active');
     });
   });
 
