@@ -875,16 +875,7 @@ section,
   padding: 60px 0;
 }
 
-.team .section-title, .clients .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
 
-.team .section-title h2, .clients .section-title h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
 
 
 
@@ -933,16 +924,6 @@ section,
   background: #f8f9fa;
 }
 
-.background-brief .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.background-brief .section-title h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
 
 
 .background-brief .background-info {
@@ -987,16 +968,6 @@ section,
   padding: 60px 0;
 }
 
-.company-structure .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.company-structure .section-title h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
 
 .company-structure .structure-item {
   display: flex;
