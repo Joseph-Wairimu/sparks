@@ -29,13 +29,25 @@
 </head>
 
 <body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
+  <header id="header" class="header d-flex flex-column align-items-center sticky-top">
+        <!-- Contact Info Slideshow -->
+        <div id="contactCarousel" class="carousel slide sticky-top" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center align-items-center">
+                <h5 class="contact-info">Address: Kitengela Town, Behind Eastmatt Supermarket, Kitengela</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center align-items-center">
+                <h5 class="contact-info">Phone: +254795382819</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename"><span>SPARKS</span> & WALK LIMITED</h1>
       </a>
 
@@ -59,7 +71,10 @@
       </nav>
 
     </div>
+
   </header>
+
+
 
   <main class="main">
 
@@ -168,15 +183,15 @@
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
               <div class="col-lg-6">
-                <img src="assets/img/recyclebin.jpg" class="img-fluid" alt="">
+                <img src="assets/img/build.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-6">
                 <div class="row gy-4">
                   <div class="col-lg-12">
-                    <img src="assets/img/recycle10.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/waste.jpg" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-12">
-                    <img src="assets/img/recycle8.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/recover.png" class="img-fluid" alt="">
                   </div>
                 </div>
               </div>
@@ -200,7 +215,7 @@
     
         <div class="row gy-4">
     
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-wine"></i>
@@ -210,7 +225,7 @@
               </a>
               <p>Retail and distribution of a thoughtfully curated selection of wines and spirits, with a focus on quality, variety, and customer satisfaction.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> -->
     
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
@@ -338,15 +353,13 @@
     
     </section><!-- /Services Section -->
     
-
-    <!-- Features Section -->
+<!-- 
     <section id="team" class="team section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Team</h2>
         <div><span>Meet Our</span> <span class="description-title">Team</span></div>
-      </div><!-- End Section Title -->
+      </div>
     
       <div class="container">
     
@@ -359,7 +372,6 @@
           <div class="col-xl-6 d-flex">
             <div class="row align-self-center gy-4">
               
-              <!-- Team Members -->
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-box d-flex align-items-center">
                   <div class="icon">
@@ -440,7 +452,7 @@
     
       </div>
     
-    </section><!-- /Team Section -->
+    </section> -->
     
     <section id="clients" class="clients section light-background">
     
@@ -545,7 +557,7 @@
 
     <div class="row gy-4">
 
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+      <!-- <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
         <div class="structure-item">
           <h3 style="color: #20c997;">Alcohol Distribution Department</h3>
           <div class="icon">
@@ -558,9 +570,9 @@
             <li>Van Sales Team:</li>
           </ul>
         </div>
-      </div><!-- End Structure Item -->
+      </div> -->
 
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="structure-item">
           <h3 style="color: #0dcaf0;">Return of Waste Used Bottles Department</h3>
           <div class="icon">
@@ -574,7 +586,7 @@
         </div>
       </div><!-- End Structure Item -->
 
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+      <div class=" col-md-4" data-aos="zoom-in" data-aos-delay="300">
         <div class="structure-item">
           <h3 style="color: #fd7e14;">Finance Department</h3>
           <div class="icon">
@@ -587,7 +599,7 @@
         </div>
       </div><!-- End Structure Item -->
 
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+      <div class=" col-md-4" data-aos="zoom-in" data-aos-delay="400">
         <div class="structure-item">
           <h3 style="color: #0d6efd;">Health and Safety Department</h3>
           <div class="icon">
@@ -848,8 +860,8 @@
           <p><strong>Contact Us:</strong></p>
           <ul class="list-unstyled mb-0">
             <li>Address: Kitengela Town, Behind Eastmatt Supermarket, Kitengela</li>
-            <li>Phone: <a href="tel:+254712345678">+254 712 345 678</a></li>
-            <li>Email: <a href="mailto:contact@sparkswalk.com">contact@sparkswalk.com</a></li>
+            <li>Phone1: <a href="tel:+254712345678">0795382819</a></li>
+            <li>Phone2: <a href="mailto:contact@sparkswalk.com">0795382916</a></li>
           </ul>
         </div>
   

@@ -37,35 +37,51 @@
 
 <body class="service-details-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename"><span>SPARKS</span> & WALK LIMITED</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero" class="active">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#clients">Clients</a></li>
-          <li><a href="index.html#company-structure">Company Structure</a></li>
-          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="index.html#background-brief">Background Brief</a></li>
-              </li> 
-              <li><a href="index.html#faq">FAQ</a></li> 
-            </ul>
-          </li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+  <header id="header" class="header d-flex flex-column align-items-center sticky-top">
+    <!-- Contact Info Slideshow -->
+    <div id="contactCarousel" class="carousel slide sticky-top" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center">
+            <h5 class="contact-info">Address: Kitengela Town, Behind Eastmatt Supermarket, Kitengela</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center">
+            <h5 class="contact-info">Phone: +254795382819</h5>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+ <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+  <a href="index.html" class="logo d-flex align-items-center">
+    <h1 class="sitename"><span>SPARKS</span> & WALK LIMITED</h1>
+  </a>
+
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="index.html#hero" >Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#team">Team</a></li>
+      <li><a href="index.html#clients">Clients</a></li>
+      <li><a href="index.html#company-structure">Company Structure</a></li>
+      <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <ul>
+          <li><a href="index.html#background-brief">Background Brief</a></li>
+          <li><a href="index.html#faq">FAQ</a></li> 
+        </ul>
+      </li>
+      <li><a href="index.html#footer">Contact</a></li>
+    </ul>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  </nav>
+
+</div>
+
+</header>
+
 
   <main class="main">
 
@@ -104,8 +120,8 @@
             <div class="service-box">
               <h4>Services List</h4>
               <div class="services-list">
-                <a href="#" class="service-link active" data-target="#service1"><i class="bi bi-arrow-right-circle"></i><span>Wines and Spirits Services</span></a>
-                <a href="#" class="service-link" data-target="#service2"><i class="bi bi-arrow-right-circle"></i><span>Residential Waste Collection</span></a>
+                <!-- <a href="#" class="service-link active" data-target="#service1"><i class="bi bi-arrow-right-circle"></i><span>Wines and Spirits Services</span></a> -->
+                <a href="#" class="service-link active" data-target="#service1"><i class="bi bi-arrow-right-circle"></i><span>Residential Waste Collection</span></a>
                 <a href="#" class="service-link" data-target="#service3"><i class="bi bi-arrow-right-circle"></i><span>Commercial Waste Collection</span></a>
                 <a href="#" class="service-link" data-target="#service4"><i class="bi bi-arrow-right-circle"></i><span>Recycling Services</span></a>
                 <a href="#" class="service-link" data-target="#service5"><i class="bi bi-arrow-right-circle"></i><span>Hazardous Waste Management</span></a>
@@ -136,7 +152,7 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div id="service1" class="service-content active">
+            <!-- <div id="service1" class="service-content active">
 
             <img src="assets/img/call-center-customer.png" alt="" class="img-fluid services-img">
             <h3>Wines and Spirits Services</h3>
@@ -157,10 +173,10 @@
               <li><i class="bi bi-check-circle"></i> <span>Partnership opportunities with retail outlets and distributors looking to enhance their beverage offerings.</span></li>
             </ul>
 
-            </div>
+            </div> -->
 
                   <!-- Service 2 Details -->
-            <div id="service2" class="service-content">
+            <div id="service1" class="service-content active">
               <img src="assets/img/call-center-customer.png" alt="" class="img-fluid services-img">
               <h3>Residential Waste Collection</h3>
 
@@ -414,8 +430,8 @@
           <p><strong>Contact Us:</strong></p>
           <ul class="list-unstyled mb-0">
             <li>Address: Kitengela Town, Behind Eastmatt Supermarket, Kitengela</li>
-            <li>Phone: <a href="tel:+254712345678">+254 712 345 678</a></li>
-            <li>Email: <a href="mailto:contact@sparkswalk.com">contact@sparkswalk.com</a></li>
+            <li>Phone1: <a href="tel:+254712345678">0795382819</a></li>
+            <li>Phone2: <a href="mailto:contact@sparkswalk.com">0795382916</a></li>
           </ul>
         </div>
   

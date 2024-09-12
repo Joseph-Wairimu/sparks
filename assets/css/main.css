@@ -1353,3 +1353,22 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+#contact-slider .carousel-item {
+  height: 10%;
+}
+
+#contact-slider .contact-info {
+  font-size: 14px; /* Smaller font to fit the thin slider */
+  margin: 0;
+  padding: 0;
+}
+
+/* Align content in the center */
+.carousel-item .d-flex {
+  height: 100%;
+}
+
+#contactCarousel{
+
+}
