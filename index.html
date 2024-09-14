@@ -832,6 +832,7 @@
 
 
   </main>
+  <div id="map" style="width:100%; height:400px;"></div>
 
   <footer id="footer" class="footer light-background py-4">
     <div class="container">
@@ -886,6 +887,20 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWtntVnBUvN_a47YjJIeuKiztdJ2Tq2UU&callback=initMap" async defer></script>
+<script>
+  function initMap() {
+    var location = {lat:-1.47533319546748, lng:  36.95913802830549}; // Replace with actual coordinates
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+</script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
